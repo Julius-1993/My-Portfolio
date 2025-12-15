@@ -65,9 +65,10 @@ export default function App() {
   };
 
   const PROJECTS = [
-    { id: 1, title: 'E-Commerce website', description: 'E-commerce platform with admin dashboard.', image: 'images/CEO.jpeg', url: 'https://example.com' },
+    { id: 1, title: 'Ujimal Enterprise', description: 'Enterprise platform with just single page.', image: 'images/Ujimal Enterprise.PNG', url: 'https://ujimal-enterprises.onrender.com/' },
     { id: 2, title: 'Real-Estate website', description: 'Realtime real-estate website.', image: 'images/CEO.jpeg', url: 'https://example.com' },
-    { id: 3, title: 'Fintech App', description: 'Content engine with monetization.', image: 'images/CEO.jpeg', url: 'https://example.com' }
+    { id: 3, title: 'Fintech App', description: 'Content engine with monetization.', image: 'images/CEO.jpeg', url: 'https://example.com' },
+    { id: 3, title: 'E-Commerce website', description: 'E-commerce platform with admin dashboard.', image: 'images/CEO.jpeg', url: 'https://example.com' }
   ];
 
   const CONTACTS = {
