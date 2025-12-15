@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { FaWhatsapp, FaLinkedinIn } from "react-icons/fa";
 import { BsFacebook } from "react-icons/bs";
 import { BiLogoGmail } from "react-icons/bi";
+import { GoArrowUpRight } from "react-icons/go";
 
 function useReveal() {
   const refs = useRef([]);
@@ -84,7 +85,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-base-100 text-base-content">
+    <div className="min-h-screen bg-base-100 text-base-content" loading="lazy">
       {/* NAVBAR */}
       <nav className="sticky top-0 z-50 backdrop-blur bg-white/60 dark:bg-neutral-900/60 border-b">
         <div className="container mx-auto px-4">
@@ -140,13 +141,13 @@ export default function App() {
 
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="#projects" onClick={(e) => handleNavClick(e, 'projects')} className="btn btn-primary btn-lg">See projects</a>
-              <a href={CONTACTS.email} className="btn btn-ghost btn-lg">Email me</a>
+              <a href={CONTACTS.email} className="btn btn-ghost btn-lg">Email me <BiLogoGmail /></a>
             </div>
 
             <div className="mt-8 flex gap-4 items-center">
-              <a href={CONTACTS.linkedin} target="_blank" rel="noreferrer" className="btn btn-ghost btn-sm">LinkedIn</a>
-              <a href={CONTACTS.facebook} target="_blank" rel="noreferrer" className="btn btn-ghost btn-sm">Facebook</a>
-              <a href={CONTACTS.whatsapp} target="_blank" rel="noreferrer" className="btn btn-ghost btn-sm">WhatsApp</a>
+              <a href={CONTACTS.linkedin} target="_blank" rel="noreferrer" className="btn bg-black btn-sm btn-circle"><FaLinkedinIn className='text-white' /></a>
+              <a href={CONTACTS.facebook} target="_blank" rel="noreferrer" className="btn btn-sm btn-primary btn-circle"><BsFacebook /></a>
+              <a href={CONTACTS.whatsapp} target="_blank" rel="noreferrer" className="btn btn-sm btn-circle btn-success"><FaWhatsapp className='text-white'/></a>
             </div>
           </div>
 
@@ -165,7 +166,7 @@ export default function App() {
             <h2 className="text-2xl font-bold">About me</h2>
             <p className="mt-4 max-w-prose">I build modern web applications using React, Node, and cloud services. My focus is on performance (lazy loading, code splitting), accessibility (ARIA, keyboard navigation), and delightful micro-interactions.</p>
 
-            <div className="mt-6 grid sm:grid-cols-2 gap-4">
+            <div className="mt-6 grid sm:grid-cols-2 gap-4" loading="lazy">
               <div className="p-4 border rounded-lg">
                 <h3 className="font-semibold">Performance</h3>
                 <p className="text-sm opacity-70">Images lazy-loaded, code splitting, optimized assets.</p>
@@ -195,7 +196,7 @@ export default function App() {
             </ul>
 
             <div className="mt-6">
-              <a href={CONTACTS.whatsapp} target="_blank" rel="noreferrer" className="btn btn-block">Message on WhatsApp</a>
+              <a href={CONTACTS.whatsapp} target="_blank" rel="noreferrer" className="btn btn-block btn-success">Message on WhatsApp <FaWhatsapp /></a>
             </div>
           </aside>
         </div>
@@ -235,7 +236,7 @@ export default function App() {
                 <h3 className="card-title">{p.title}</h3>
                 <p className="text-sm opacity-70">{p.description}</p>
                 <div className="card-actions justify-end">
-                  <a href={p.url} target="_blank" rel="noreferrer" className="btn btn-primary btn-sm">Visit</a>
+                  <a href={p.url} target="_blank" rel="noreferrer" className="btn btn-primary btn-sm"><GoArrowUpRight className='text-xl' /></a>
                 </div>
               </div>
             </article>
