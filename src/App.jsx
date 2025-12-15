@@ -66,7 +66,7 @@ export default function App() {
   const PROJECTS = [
     { id: 1, title: 'E-Commerce website', description: 'E-commerce platform with admin dashboard.', image: 'images/CEO.jpeg', url: 'https://example.com' },
     { id: 2, title: 'Real-Estate website', description: 'Realtime real-estate website.', image: 'images/CEO.jpeg', url: 'https://example.com' },
-    { id: 3, title: 'Fintech App', description: 'Content engine with monetization.', image: 'https://via.placeholder.com/800x600.png?text=Project+Gamma', url: 'https://example.com' }
+    { id: 3, title: 'Fintech App', description: 'Content engine with monetization.', image: 'images/CEO.jpeg', url: 'https://example.com' }
   ];
 
   const CONTACTS = {
