@@ -102,7 +102,7 @@ export default function App() {
               <a href="#about" onClick={(e) => handleNavClick(e, 'about')} className="link link-hover">About</a>
               <a href="#projects" onClick={(e) => handleNavClick(e, 'projects')} className="link link-hover">Projects</a>
               <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')} className="link link-hover">Contact</a>
-              <a href="#footer" onClick={(e) => handleNavClick(e, 'footer')} className="btn btn-outline btn-sm">Hire me</a>
+              <a href="#footer" onClick={(e) => handleNavClick(e, 'footer')} className="btn btn-primary btn-sm">Hire me</a>
               <ThemeToggle />
             </div>
 
