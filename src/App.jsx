@@ -71,7 +71,7 @@ export default function App() {
   ];
 
   const CONTACTS = {
-    whatsapp: 'https://wa.me/+2348037200529?text=Hi%20there!',
+    whatsapp: 'https://wa.me/2348037200529?text=Hi%20there!',
     facebook: 'https://facebook.com/YOURPROFILE',
     linkedin: 'https://www.linkedin.com/in/YOURPROFILE',
     email: 'mailto:aakojuliusoluwanifemi@gmail.com'
