@@ -1,4 +1,4 @@
-Developer Portfolio (Vite + React + Tailwind + DaisyUI)
+This is AJ-TECH Developer Portfolio (Vite + React + Tailwind + DaisyUI)
 
 Quick start:
 
@@ -7,5 +7,6 @@ Quick start:
 3. Open http://localhost:5173
 
 Notes:
-- Update src/App.jsx PROFILE and PROJECTS with your real information and links.
+- Update src/App.jsx PROFILE and PROJECTS with your real information and links and don't use my information without taking permission from me.
 - Tailwind & DaisyUI are preconfigured.
+- Any other updates will be added in due time.
